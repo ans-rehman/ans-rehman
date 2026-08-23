@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="430" viewBox="0 0 880 430" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.17"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="panel"><rect x="1" y="1" width="878" height="428" rx="10"/></clipPath>
+    <path id="orbit" d="M 118 232 m -78 0 a 78 30 -18 1 0 156 0 a 78 30 -18 1 0 -156 0"/>
+  </defs>
+
+  <style>
+    .bg     { fill: #0B1120; }
+    .card   { fill: #0F172A; stroke: #1E293B; stroke-width: 1; }
+    .key    { fill: #64748B; font-size: 12px; letter-spacing: 0.06em; }
+    .val    { fill: #E2E8F0; font-size: 13px; }
+    .accent { fill: #22D3EE; font-size: 13px; }
+    .warn   { fill: #FBBF24; font-size: 13px; }
+    .ok     { fill: #4ADE80; font-size: 13px; }
+    .dim    { fill: #475569; font-size: 11px; }
+    .hdr    { fill: #E2E8F0; font-size: 15px; letter-spacing: 0.14em; }
+    .art    { fill: #334155; font-size: 11px; white-space: pre; }
+    .artlit { fill: #22D3EE; font-size: 11px; white-space: pre; }
+
+    /* Base state is visible. The animation fades each row IN using
+       fill-mode backwards, so if a renderer strips CSS animation the
+       content still shows rather than staying at opacity 0. */
+    .row { opacity: 1; animation: fade 0.45s ease backwards; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+    .sweep { animation: sweep 5s cubic-bezier(.4,0,.6,1) infinite; transform-origin: 118px 232px; }
+    @keyframes sweep {
+      0%, 100% { transform: rotate(-38deg); }
+      50%      { transform: rotate(38deg); }
+    }
+
+    .blink { animation: blink 1.05s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .scan { animation: scan 7s linear infinite; }
+    @keyframes scan { from { transform: translateY(-6px); } to { transform: translateY(436px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sweep, .blink, .scan, .row, .sat { animation: none; opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#panel)">
+    <rect class="bg" width="880" height="430"/>
+    <rect class="scan" x="0" y="0" width="880" height="2" fill="#22D3EE" opacity="0.05"/>
+  </g>
+  <rect x="0.5" y="0.5" width="879" height="429" rx="10" fill="none" stroke="#1E293B"/>
+
+  <!-- ── header ─────────────────────────────────────────────── -->
+  <text class="hdr" x="28" y="40">GROUND STATION // DOWNLINK</text>
+  <text class="dim" x="28" y="58">frame 2352026 · decoded 2026-08-23 20:26 UTC</text>
+  <g transform="translate(700,28)">
+    <circle cx="0" cy="7" r="4" fill="#4ADE80"/>
+    <text class="ok" x="12" y="12">CARRIER LOCK</text>
+  </g>
+  <rect x="28" y="72" width="824" height="1" fill="url(#edge)"/>
+
+  <!-- ── left: antenna + orbit ──────────────────────────────── -->
+  <!-- orbit track and spacecraft, behind the beam -->
+  <ellipse cx="118" cy="196" rx="82" ry="30" fill="none" stroke="#1E293B" transform="rotate(-16 118 196)"/>
+  <circle r="3.5" fill="#22D3EE">
+    <animateMotion dur="11s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#orbit"/>
+    </animateMotion>
+  </circle>
+
+  <!-- downlink beam, sweeping about the dish pivot -->
+  <g class="sweep">
+    <path d="M 118 322 L 56 176 L 180 176 Z" fill="url(#beam)"/>
+  </g>
+
+  <!-- ground station dish, drawn rather than typed so it stays aligned -->
+  <g stroke="#475569" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M 78 306 A 44 44 0 0 1 158 306" stroke="#64748B"/>
+    <line x1="118" y1="284" x2="118" y2="330"/>
+    <line x1="104" y1="330" x2="132" y2="330"/>
+    <line x1="118" y1="330" x2="118" y2="344"/>
+    <line x1="98"  y1="344" x2="138" y2="344"/>
+    <circle cx="118" cy="288" r="2.4" fill="#22D3EE" stroke="none"/>
+  </g>
+
+  <text class="artlit" x="58" y="372">▲ AOS 20:26:16</text>
+  <text class="dim"    x="58" y="388">station Thuwal, SA</text>
+
+  <line x1="228" y1="96" x2="228" y2="392" stroke="#1E293B"/>
+
+  <!-- ── right: telemetry readout ───────────────────────────── -->
+  <g transform="translate(262,0)">
+    <text class="row key" x="0"   y="108" style="animation-delay:.10s">OPERATOR</text>
+    <text class="row val" x="150" y="108" style="animation-delay:.10s">Ans Rehman</text>
+
+    <text class="row key" x="0"   y="134" style="animation-delay:.20s">MISSION</text>
+    <text class="row val" x="150" y="134" style="animation-delay:.20s">MS ECE @ KAUST -- Communication Theory Lab</text>
+
+    <text class="row key" x="0"   y="160" style="animation-delay:.30s">PAYLOAD</text>
+    <text class="row val" x="150" y="160" style="animation-delay:.30s">wireless comms · LEO satellite PHM · IoT</text>
+
+    <text class="row key" x="0"   y="186" style="animation-delay:.40s">UPTIME</text>
+    <text class="row val" x="150" y="186" style="animation-delay:.40s">2y 5mo</text>
+
+    <rect x="0" y="202" width="560" height="1" fill="#1E293B"/>
+
+    <text class="row key"    x="0"   y="228" style="animation-delay:.50s">REPOSITORIES</text>
+    <text class="row accent" x="150" y="228" style="animation-delay:.50s">20</text>
+    <text class="row key"    x="300" y="228" style="animation-delay:.55s">STARS</text>
+    <text class="row accent" x="420" y="228" style="animation-delay:.55s">2</text>
+
+    <text class="row key"    x="0"   y="254" style="animation-delay:.60s">COMMITS</text>
+    <text class="row accent" x="150" y="254" style="animation-delay:.60s">173</text>
+    <text class="row key"    x="300" y="254" style="animation-delay:.65s">FOLLOWERS</text>
+    <text class="row accent" x="420" y="254" style="animation-delay:.65s">2</text>
+
+    <text class="row key"  x="0"   y="280" style="animation-delay:.70s">LINES OF CODE</text>
+    <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,663,372</text>
+    <text class="row warn" x="270" y="280" style="animation-delay:.72s">-16,650</text>
+    <text class="row val"  x="390" y="280" style="animation-delay:.74s">= 2,646,722</text>
+
+    <rect x="0" y="296" width="560" height="1" fill="#1E293B"/>
+
+    <text class="row key" x="0" y="322" style="animation-delay:.80s">INSTRUMENTS</text>
+    <text class="row val" x="150" y="322" style="animation-delay:.80s" font-size="12">Python · QML · C · CMake · TeX · HTML</text>
+
+    <text class="row key" x="0" y="348" style="animation-delay:.86s">LINK MARGIN</text>
+    <g class="row" style="animation-delay:.86s">
+      <rect x="150" y="338" width="300" height="8" rx="4" fill="#1E293B"/>
+      <rect x="150" y="338" width="24" height="8" rx="4" fill="#22D3EE"/>
+      <text class="accent" x="464" y="347" font-size="12">4.0 dB</text>
+    </g>
+
+    <text class="row dim" x="0" y="378" style="animation-delay:.92s">$ awaiting next pass<tspan class="blink"> █</tspan></text>
+  </g>
+</svg>
