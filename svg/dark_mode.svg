@@ -57,7 +57,7 @@
 
   <!-- ── header ─────────────────────────────────────────────── -->
   <text class="hdr" x="28" y="40">GROUND STATION // DOWNLINK</text>
-  <text class="dim" x="28" y="58">frame 2371900 · decoded 2026-08-25 19:00 UTC</text>
+  <text class="dim" x="28" y="58">frame 2380201 · decoded 2026-08-26 02:01 UTC</text>
   <g transform="translate(700,28)">
     <circle cx="0" cy="7" r="4" fill="#4ADE80"/>
     <text class="ok" x="12" y="12">CARRIER LOCK</text>
@@ -88,7 +88,7 @@
     <circle cx="118" cy="288" r="2.4" fill="#22D3EE" stroke="none"/>
   </g>
 
-  <text class="artlit" x="58" y="372">▲ AOS 19:00:17</text>
+  <text class="artlit" x="58" y="372">▲ AOS 02:01:20</text>
   <text class="dim"    x="58" y="388">station Thuwal, SA</text>
 
   <line x1="228" y1="96" x2="228" y2="392" stroke="#1E293B"/>
