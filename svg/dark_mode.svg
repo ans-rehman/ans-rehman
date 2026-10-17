@@ -57,7 +57,7 @@
 
   <!-- ── header ─────────────────────────────────────────────── -->
   <text class="hdr" x="28" y="40">GROUND STATION // DOWNLINK</text>
-  <text class="dim" x="28" y="58">frame 2892116 · decoded 2026-10-16 21:16 UTC</text>
+  <text class="dim" x="28" y="58">frame 2900435 · decoded 2026-10-17 04:35 UTC</text>
   <g transform="translate(700,28)">
     <circle cx="0" cy="7" r="4" fill="#4ADE80"/>
     <text class="ok" x="12" y="12">CARRIER LOCK</text>
@@ -88,7 +88,7 @@
     <circle cx="118" cy="288" r="2.4" fill="#22D3EE" stroke="none"/>
   </g>
 
-  <text class="artlit" x="58" y="372">▲ AOS 21:16:37</text>
+  <text class="artlit" x="58" y="372">▲ AOS 04:35:14</text>
   <text class="dim"    x="58" y="388">station Thuwal, SA</text>
 
   <line x1="228" y1="96" x2="228" y2="392" stroke="#1E293B"/>
@@ -117,7 +117,7 @@
     <text class="row key"    x="0"   y="254" style="animation-delay:.60s">COMMITS</text>
     <text class="row accent" x="150" y="254" style="animation-delay:.60s">174</text>
     <text class="row key"    x="300" y="254" style="animation-delay:.65s">FOLLOWERS</text>
-    <text class="row accent" x="420" y="254" style="animation-delay:.65s">3</text>
+    <text class="row accent" x="420" y="254" style="animation-delay:.65s">4</text>
 
     <text class="row key"  x="0"   y="280" style="animation-delay:.70s">LINES OF CODE</text>
     <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,663,377</text>
