@@ -57,7 +57,7 @@
 
   <!-- ── header ─────────────────────────────────────────────── -->
   <text class="hdr" x="28" y="40">GROUND STATION // DOWNLINK</text>
-  <text class="dim" x="28" y="58">frame 2950456 · decoded 2026-10-22 04:56 UTC</text>
+  <text class="dim" x="28" y="58">frame 2951159 · decoded 2026-10-22 11:59 UTC</text>
   <g transform="translate(700,28)">
     <circle cx="0" cy="7" r="4" fill="#16A34A"/>
     <text class="ok" x="12" y="12">CARRIER LOCK</text>
@@ -88,7 +88,7 @@
     <circle cx="118" cy="288" r="2.4" fill="#0891B2" stroke="none"/>
   </g>
 
-  <text class="artlit" x="58" y="372">▲ AOS 04:56:46</text>
+  <text class="artlit" x="58" y="372">▲ AOS 11:59:54</text>
   <text class="dim"    x="58" y="388">station Thuwal, SA</text>
 
   <line x1="228" y1="96" x2="228" y2="392" stroke="#E2E8F0"/>
@@ -110,19 +110,19 @@
     <rect x="0" y="202" width="560" height="1" fill="#E2E8F0"/>
 
     <text class="row key"    x="0"   y="228" style="animation-delay:.50s">REPOSITORIES</text>
-    <text class="row accent" x="150" y="228" style="animation-delay:.50s">20</text>
+    <text class="row accent" x="150" y="228" style="animation-delay:.50s">21</text>
     <text class="row key"    x="300" y="228" style="animation-delay:.55s">STARS</text>
     <text class="row accent" x="420" y="228" style="animation-delay:.55s">2</text>
 
     <text class="row key"    x="0"   y="254" style="animation-delay:.60s">COMMITS</text>
-    <text class="row accent" x="150" y="254" style="animation-delay:.60s">174</text>
+    <text class="row accent" x="150" y="254" style="animation-delay:.60s">179</text>
     <text class="row key"    x="300" y="254" style="animation-delay:.65s">FOLLOWERS</text>
     <text class="row accent" x="420" y="254" style="animation-delay:.65s">4</text>
 
     <text class="row key"  x="0"   y="280" style="animation-delay:.70s">LINES OF CODE</text>
-    <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,663,377</text>
-    <text class="row warn" x="270" y="280" style="animation-delay:.72s">-16,661</text>
-    <text class="row val"  x="390" y="280" style="animation-delay:.74s">= 2,646,716</text>
+    <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,668,378</text>
+    <text class="row warn" x="270" y="280" style="animation-delay:.72s">-16,969</text>
+    <text class="row val"  x="390" y="280" style="animation-delay:.74s">= 2,651,409</text>
 
     <rect x="0" y="296" width="560" height="1" fill="#E2E8F0"/>
 
