@@ -57,7 +57,7 @@
 
   <!-- ── header ─────────────────────────────────────────────── -->
   <text class="hdr" x="28" y="40">GROUND STATION // DOWNLINK</text>
-  <text class="dim" x="28" y="58">frame 3240725 · decoded 2026-11-20 07:25 UTC</text>
+  <text class="dim" x="28" y="58">frame 3242027 · decoded 2026-11-20 20:27 UTC</text>
   <g transform="translate(700,28)">
     <circle cx="0" cy="7" r="4" fill="#4ADE80"/>
     <text class="ok" x="12" y="12">CARRIER LOCK</text>
@@ -88,7 +88,7 @@
     <circle cx="118" cy="288" r="2.4" fill="#22D3EE" stroke="none"/>
   </g>
 
-  <text class="artlit" x="58" y="372">▲ AOS 07:25:04</text>
+  <text class="artlit" x="58" y="372">▲ AOS 20:27:54</text>
   <text class="dim"    x="58" y="388">station Thuwal, SA</text>
 
   <line x1="228" y1="96" x2="228" y2="392" stroke="#1E293B"/>
@@ -110,30 +110,30 @@
     <rect x="0" y="202" width="560" height="1" fill="#1E293B"/>
 
     <text class="row key"    x="0"   y="228" style="animation-delay:.50s">REPOSITORIES</text>
-    <text class="row accent" x="150" y="228" style="animation-delay:.50s">21</text>
+    <text class="row accent" x="150" y="228" style="animation-delay:.50s">22</text>
     <text class="row key"    x="300" y="228" style="animation-delay:.55s">STARS</text>
     <text class="row accent" x="420" y="228" style="animation-delay:.55s">2</text>
 
     <text class="row key"    x="0"   y="254" style="animation-delay:.60s">COMMITS</text>
-    <text class="row accent" x="150" y="254" style="animation-delay:.60s">179</text>
+    <text class="row accent" x="150" y="254" style="animation-delay:.60s">187</text>
     <text class="row key"    x="300" y="254" style="animation-delay:.65s">FOLLOWERS</text>
     <text class="row accent" x="420" y="254" style="animation-delay:.65s">2</text>
 
     <text class="row key"  x="0"   y="280" style="animation-delay:.70s">LINES OF CODE</text>
-    <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,668,378</text>
-    <text class="row warn" x="270" y="280" style="animation-delay:.72s">-16,969</text>
-    <text class="row val"  x="390" y="280" style="animation-delay:.74s">= 2,651,409</text>
+    <text class="row ok"   x="150" y="280" style="animation-delay:.70s">+2,675,044</text>
+    <text class="row warn" x="270" y="280" style="animation-delay:.72s">-17,401</text>
+    <text class="row val"  x="390" y="280" style="animation-delay:.74s">= 2,657,643</text>
 
     <rect x="0" y="296" width="560" height="1" fill="#1E293B"/>
 
     <text class="row key" x="0" y="322" style="animation-delay:.80s">INSTRUMENTS</text>
-    <text class="row val" x="150" y="322" style="animation-delay:.80s" font-size="12">Python · QML · C · CMake · TeX · HTML</text>
+    <text class="row val" x="150" y="322" style="animation-delay:.80s" font-size="12">Python · QML · C · Jupyter Notebook · CMake · TeX</text>
 
     <text class="row key" x="0" y="348" style="animation-delay:.86s">LINK MARGIN</text>
     <g class="row" style="animation-delay:.86s">
       <rect x="150" y="338" width="300" height="8" rx="4" fill="#1E293B"/>
       <rect x="150" y="338" width="24" height="8" rx="4" fill="#22D3EE"/>
-      <text class="accent" x="464" y="347" font-size="12">4.0 dB</text>
+      <text class="accent" x="464" y="347" font-size="12">4.1 dB</text>
     </g>
 
     <text class="row dim" x="0" y="378" style="animation-delay:.92s">$ awaiting next pass<tspan class="blink"> █</tspan></text>
