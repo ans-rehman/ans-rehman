@@ -17,7 +17,7 @@ MS student in Electrical and Computer Engineering at KAUST, Communication Theory
 
 **LEO satellite prognostics and health management.** Built a physics-based multi-fault telemetry corpus for small satellites using MATLAB/Simulink Monte Carlo simulation, covering ADCS and EPS fault modes, plus a benchmark pipeline that runs supervised and unsupervised fault detectors against it. No public dataset of this kind existed, so the corpus itself is the contribution.
 
-**Physical-layer characterization and IoT.** Protocol design and hardware experiments with Semtech LR2021 transceivers, plus LoRaWAN deployment work. Modulation theory -- GMSK, MSK, and the CPM family -- worked from derivation through to simulation.
+**Physical-layer characterization and IoT.** Protocol design and hardware experiments with Semtech LR2021 transceivers, plus LoRaWAN deployment work. Modulation theory : GMSK, MSK, and the CPM family, worked from derivation through to simulation.
 
 Earlier: deep reinforcement learning for reconfigurable intelligent surface optimization, and embedded IoT systems in industry.
 
