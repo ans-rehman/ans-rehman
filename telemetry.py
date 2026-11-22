@@ -30,7 +30,7 @@ import requests
 
 # ── configuration ────────────────────────────────────────────────────────
 # Edit these three: they are yours to write, not derived from the API.
-ROLE = "MS ECE @ KAUST -- Communication Theory Lab"
+ROLE = "MS ECE @ KAUST Communication Theory Lab"
 FOCUS = "wireless comms · LEO satellite PHM · IoT"
 LOCATION = "Thuwal, SA"
 
